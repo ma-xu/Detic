@@ -91,6 +91,7 @@ class VideoVisualizer:
             # assert len(masks_rles) == num_instances
         else:
             masks = None
+        masks = None
 
         if not predictions.has("COLOR"):
             if predictions.has("ID"):
