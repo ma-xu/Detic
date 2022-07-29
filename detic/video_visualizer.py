@@ -73,6 +73,7 @@ class VideoVisualizer:
 
         boxes = predictions.pred_boxes.tensor.numpy() if predictions.has("pred_boxes") else None
         scores = predictions.scores if predictions.has("scores") else None
+        scores = None
         classes = predictions.pred_classes.numpy() if predictions.has("pred_classes") else None
         keypoints = predictions.pred_keypoints if predictions.has("pred_keypoints") else None
         colors = predictions.COLOR if predictions.has("COLOR") else [None] * len(predictions)
