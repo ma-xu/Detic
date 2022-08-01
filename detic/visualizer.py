@@ -397,7 +397,7 @@ class Visualizer:
             masks = None
 
         # xu debug: remove mask
-        masks = None
+        # masks = None
 
         if self._instance_mode == ColorMode.SEGMENTATION and self.metadata.get("thing_colors"):
             colors = [
