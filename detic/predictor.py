@@ -9,7 +9,8 @@ import torch
 from detectron2.data import MetadataCatalog
 from detectron2.engine.defaults import DefaultPredictor
 from .video_visualizer import VideoVisualizer
-from .visualizer import ColorMode, Visualizer
+from .visualizer import Visualizer
+from detectron2.utils.visualizer import ColorMode
 
 from .modeling.utils import reset_cls_test
 
